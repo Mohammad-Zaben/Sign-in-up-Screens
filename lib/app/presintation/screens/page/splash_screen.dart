@@ -24,10 +24,14 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: SafeArea(
-        child: Center(
-          child: Image(
-            image: AssetImage("assets/images/splash_logo.png"),
-          ),
+        child: Column(
+          children: [
+            Center(
+              child: Image(
+                image: AssetImage("assets/images/splash_logo.png"),
+              )
+            ),Text("test to push")
+          ],
         ),
       ),
     );
